@@ -1,0 +1,1198 @@
+@font-face {
+    font-family: Insolent;
+    src: url(../fonts/insolent.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.special-para {
+    color: #FF5917;
+    font-size: 1.2vw;
+}
+p{
+    color: #CBCBCB;
+    font-family: Poppins;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8vw; /* 175% */
+}
+h2{
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 3.5vw;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+h2 span{
+    color:#FF5917;
+}
+
+/* --------------------header------------
+-------------- */
+
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: -2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .navbar img {
+    width: 100%;
+}
+
+.header .navbar .top {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5vw 0vw;
+    padding-bottom: .5vw;
+    margin-top: -8vw;
+}
+
+.header .navbar .top .socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.header .navbar .top .socials p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header .navbar .top .socials img {
+    width: 3vw;
+    animation: fadeInDown .7s linear  1 alternate;
+}
+
+.header .navbar .top .btns {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.header .navbar .top .btns a {
+    color: #CFCDCD;
+    font-family: Poppins;
+    font-size: .8vw;
+    font-style: normal;
+    font-weight: 700; /* 150% */
+    text-transform: uppercase;
+    padding: .5vw 1.5vw;
+    border-radius: 3px;
+    border-top: 2px solid #2A2B37;
+    border-bottom: 2px solid #2A2B37;
+    background: #23262D;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    animation: fadeInDown .9s linear  1 alternate;
+}
+
+.header .navbar .bottom {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.header .navbar .bottom .left {
+    display: flex;
+    align-items: center;
+    gap: 6vw;
+}
+
+.header .navbar .bottom .left a {
+    font-family: Poppins;
+    font-size: .8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5vw; /* 150% */
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+/* --------------------hero-banner------------
+-------------- */
+.hero-banner{
+    padding: 14vw 10vw;
+    background: url("../images/hero-banner.png")no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.hero-banner h1 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.4vw;
+    margin-bottom: 2vw;
+    line-height: 2.8vw;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.hero-banner a img {
+    width: 9vw;
+    transition: all .5s ease-in;
+}
+.hero-banner a img:hover {
+    transform:translateY(-10px);
+}
+/* -------------------about--------------
+-------------------- */
+.about{
+    padding: 5vw 10vw;
+    background: url("../images/about-bg.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about .special-para {
+    color: #FF5917;
+    font-size: 1.2vw;
+}
+.about h3 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    animation: fadeInLeft .9s linear  1 alternate;
+}
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us .left,.about-us .right {
+    width: 48%;
+}
+.about-us .right h2{
+    margin-bottom: 1vw;
+    animation: fadeInRight 1.2s linear  1 alternate;
+}
+.about-us .right p{
+    margin-bottom: 1vw;
+}
+.about-us .right a img {
+    width: 10vw;
+    transition: all .5s ease-in-out;
+}
+.about-us .right a img:hover {
+    transform: translateY(-10px);
+}
+
+/* ----------------about------------
+------------------- */
+.about-us-2{
+    padding: 5vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-2 .left,.about-us-2 .right {
+    width: 48%;
+    background: #18191F;
+    min-height: 20vw;
+}
+.about-us-2 img {
+    width: 100%;
+    
+}
+.about-us-2 p{
+    padding: 0 5vw;
+    margin-top: 3vw;
+    color: #CBCBCB;
+    opacity: .6;
+}
+.about-us-2 .heading1 {
+    margin-top: -3.1vw;
+}
+.about-us-2 .heading2 {
+    margin-top: -3.1vw;
+}
+
+/* --------------abou-us-3----------------------
+--------------- */
+.about-us-3{
+    padding: 5vw 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-3 .left,.about-us-3 .right {
+    width: 48%;
+    background: #18191F;
+    min-height: 20vw;
+}
+.about-us-3 img {
+    width: 100%;
+    
+}
+.about-us-3 p{
+    padding: 0 5vw;
+    margin-top: 3vw;
+    color: #CBCBCB;
+    opacity: .6;
+}
+.about-us-3 .heading1 {
+    margin-top: -3.1vw;
+}
+.about-us-3 .heading2 {
+    margin-top: -3.1vw;
+}
+.forces {
+    padding: 5vw 10vw;
+    background: url("../images/forces-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forces .left{
+    width: 55vw;
+}
+.forces .right{
+    width: 40vw;
+}
+.forces .right h2 {
+    margin-bottom: 1vw;
+    animation: fadeInLeft 1.2s linear  1 alternate;
+}
+.forces .right p {
+    margin-bottom: 1vw;
+}
+.forces .right img {
+    width: 10vw;
+    transition: all .5s ease-in-out;
+}
+.forces .right img:hover {
+    transform: translateY(-10px);
+}
+/* ---------------tokenomcs--------------
+--------------- */
+.tokenomics {
+    padding: 5vw 0;
+    background: url("../images/tokenomics-bg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 50vw;
+    position: relative;
+}
+.tokenomics .liquidity {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap:.7vw;
+    position: absolute;
+    top: 20vw;
+    left: 16vw;
+}
+.tokenomics .liquidity img {
+    width: 5vw;
+}
+.tokenomics .contract {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap:.7vw;
+    position: absolute;
+    top: 31vw;
+    left: 16vw;
+}
+.tokenomics .contract img {
+    width: 5vw;
+}
+.tokenomics .supply {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    position: absolute;
+    top: 23vw;
+    left: 66vw;
+}
+.tokenomics .supply-value{
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.1vw;
+    font-style: italic;
+    font-weight: 500;
+    position: absolute;
+    top: 21vw;
+    left: 66vw;
+}
+.tokenomics .tax {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 29vw;
+    left: 66vw;
+}
+.tokenomics .tax-value {
+    color: #FF5917;
+    font-family: Insolent;
+    font-size: 5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 30vw;
+    left: 65vw;
+}
+
+/* ----------------------roadmap---------------
+------------- */
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5vw 15vw;
+    gap: 5.5vw;
+    background: url("../images/road-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.roadmap .img-2{
+    display: none;
+}
+.roadmap .box-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.roadmap .box-1 img:first-child{
+    width: 100%;
+    min-height: 20vw;
+}
+.roadmap .box-1 .phase1{
+    width: 18vw;
+    margin-top: -19.5vw;
+    margin-bottom: 1vw;
+}
+.roadmap .box-5{
+    margin-top: -2vw;
+}
+.roadmap .box-1 .padding {
+    padding-left: 7vw;
+}
+.roadmap .box-1 h3 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1vw;
+}
+.roadmap .box-1 p{
+    padding-right: 5vw;
+}
+.roadmap .special-para{
+    margin-top: 2vw;
+}
+
+/* --------contract-----------
+------------------------------------- */
+.parent-contract {
+    padding: 5vw 10vw;
+    background: #1F2025;
+}
+.parent-contract .contract{
+    width: 100%;
+    border-radius: 12px;
+    background: #FF5917;
+    padding: 3vw 0;
+    position: relative;
+}
+.parent-contract .contract .contract-img {
+    position: absolute;
+    top: -10vw;
+    left: -11vw;
+    width: 40vw;
+}
+.parent-contract .contract h2{
+    margin-bottom: 1vw;
+}
+.parent-contract .contract .copy-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-contract .contract .copy-text input[type=text]{
+    background: #262525;
+    border: 1px solid #fff;
+    color: #CBCBCB;
+    width: 30vw;
+    height: 50px;
+    font-size: 1.1VW;
+    text-align: center;
+}
+.parent-contract .contract .copy-text input[type=submit]{
+    height: 50px;
+    width: 5vw;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 1vw;
+    font-weight: 700;
+    font-family: Poppins;
+    cursor: pointer;
+}
+/* -----------crypto-market-------------
+------------- */
+.crypto-markets {
+    width: 100%;
+    padding: 4vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    background: #131418;
+}
+.crypto-markets img {
+    width: 12vw;
+}
+/* -----------------------footer---------------
+------------------ */
+footer{
+    padding: 5vw 10vw;
+    background: url("../images/footer-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+footer .logo {
+    width: 60%;
+}
+footer .logo .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+footer .logo .social-icons a i{
+    color: #A6A6A5;
+    font-size: 14px;
+}
+footer .email {
+    width: 20%;
+} 
+footer h3{
+    color: #FFF;
+    text-align: right;
+    font-family: Inter;
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+}
+footer .email a {
+    color: #FF5917;
+    display: block;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 2vw;
+}
+footer .links{
+    width: 20%;
+}
+footer .logo img {
+    width: 12vw;
+}
+footer .links ul{
+    margin-top: 2vw;
+}
+footer .links ul li{
+    
+    text-align: right;
+    font-family: Poppins;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 500;
+    list-style-type:none;
+    margin-bottom: .5vw;
+}
+footer .links ul li a{
+    color: #B5B5B5;
+}
+footer .links h3 span{
+    color: #FF5917;
+}
+/* ---------------copyright---------------
+---------------- */
+.copyright {
+    padding: 1vw;
+    background: #131418;
+}
+
+@media (max-width:980px) {
+    .header .navbar .bottom .left a {
+        font-family: Poppins;
+        font-size: 1vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5vw; /* 150% */
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+@media (max-width:600px) {
+
+    .special-para {
+        color: #FF5917;
+        font-size: 2.4vw;
+    }
+    p{
+        color: #CBCBCB;
+        font-family: Poppins;
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4vw; /* 175% */
+        text-align: center;
+    }
+    h2{
+        color: #FFF;
+        font-family: Insolent;
+        font-size: 4.5vw;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 5.5vw;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+    }
+    /* --------------------header------------
+-------------- */
+
+.header {
+    width: 100%;
+    height: auto;
+    margin-bottom: -2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .navbar img {
+    width: 100%;
+}
+
+.header .navbar .top {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5vw 0vw;
+    padding-bottom: .5vw;
+    margin-top: -7vw;
+}
+
+.header .navbar .top .socials {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.header .navbar .top .socials p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header .navbar .top .socials img {
+    width: 5vw;
+}
+
+.header .navbar .top .btns {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.header .navbar .top .btns a {
+    color: #CFCDCD;
+    font-family: Poppins;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 700; /* 150% */
+    text-transform: uppercase;
+    padding: .5vw 3vw;
+    border-radius: 3px;
+    border-top: 2px solid #2A2B37;
+    border-bottom: 2px solid #2A2B37;
+    background: #23262D;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+}
+
+.header .navbar .bottom {
+    display: none;
+}
+
+
+/* --------------------hero-banner------------
+-------------- */
+.hero-banner{
+    padding: 14vw 10vw;
+    background: url("../images/hero-banner.png")no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.hero-banner h1 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 4.4vw;
+    margin-bottom: 3vw;
+    line-height: 4.8vw;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+.hero-banner a img {
+    width: 21vw;
+}
+/* -------------------about--------------
+-------------------- */
+.about{
+    padding: 5vw 5vw;
+    background: url("../images/about-bg.png")no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about .special-para {
+    color: #FF5917;
+    font-size: 2.7vw;
+}
+.about h3 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 3.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us .left,.about-us .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-us .right h2{
+    margin-bottom: 3vw;
+    text-align: center;
+}
+.about-us .right p{
+    margin-bottom: 3vw;
+}
+.about-us .right a img {
+    width: 21vw;
+}
+
+/* ----------------about------------
+------------------- */
+.about-us-2{
+    padding: 5vw 0;
+    display: flex;
+    gap: 5vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-2 .left,.about-us-2 .right {
+    width: 100%;
+    background: #18191F;
+    min-height: 20vw;
+}
+.about-us-2 img {
+    width: 100%;
+    
+}
+.about-us-2 p{
+    padding: 0 5vw;
+    margin-top: 3vw;
+    color: #CBCBCB;
+    opacity: .6;
+}
+.about-us-2 .heading1 {
+    margin-top: -7.1vw;
+}
+.about-us-2 .heading2 {
+    margin-top: -7.1vw;
+}
+
+/* --------------abou-us-3----------------------
+--------------- */
+.about-us-3{
+    padding: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-3 .left,.about-us-3 .right {
+    width: 100%;
+    background: #18191F;
+    min-height: 20vw;
+}
+.about-us-3 img {
+    width: 100%;
+    
+}
+.about-us-3 p{
+    padding: 0 5vw;
+    margin-top: 3vw;
+    color: #CBCBCB;
+    opacity: .6;
+}
+.about-us-3 .heading1 {
+    margin-top: -7.1vw;
+}
+.about-us-3 .heading2 {
+    margin-top: -7.1vw;
+}
+.forces {
+    padding: 5vw 5vw;
+    background: url("../images/forces-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.forces .left{
+    width: 100%;
+}
+.forces .right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+}
+.forces .right h2 {
+    margin-bottom: 0vw;
+    text-align: center;
+}
+.forces .right p {
+    margin-bottom: 1vw;
+    opacity: .8;
+}
+.forces .right img {
+    width: 21vw;
+}
+/* ---------------tokenomcs--------------
+--------------- */
+.tokenomics {
+    padding: 5vw 0;
+    background: url("../images/tokenomics-bg.jpg")no-repeat;
+    background-position: center;
+    background-size: cover; 
+    height: 50vw;
+    position: relative;
+}
+.tokenomics .liquidity {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap:.7vw;
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+}
+.tokenomics .liquidity img {
+    width: 7vw;
+}
+.tokenomics .contract {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap:.7vw;
+    position: absolute;
+    top: 31vw;
+    left: 5vw;
+}
+.tokenomics .contract img {
+    width: 7vw;
+}
+.tokenomics .supply {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 400;
+    position: absolute;
+    top: 25vw;
+    left: 66vw;
+}
+.tokenomics .supply-value{
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.1vw;
+    font-style: italic;
+    font-weight: 500;
+    position: absolute;
+    top: 21vw;
+    left: 66vw;
+}
+.tokenomics .tax {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 2.5vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 33vw;
+    left: 66vw;
+}
+.tokenomics .tax-value {
+    color: #FF5917;
+    font-family: Insolent;
+    font-size: 6vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 37vw;
+    left: 65vw;
+}
+
+/* ----------------------roadmap---------------
+------------- */
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 5vw 5vw;
+    gap: 25vw;
+    background: url("../images/road-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.roadmap h2{
+    margin-top: 5vw;
+    margin-bottom: -12vw;
+}
+.roadmap .img-2{
+    display: block;
+}
+.roadmap .box-1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.roadmap .box-1 img:first-child{
+    width: 100%;
+    min-height: 20vw;
+    display: none;
+}
+.roadmap .box-1 .phase1{
+    width: 34vw;
+    margin-top: -62vw;
+    margin-bottom: 3vw;
+}
+.roadmap .box-5{
+    margin-top: -2vw;
+}
+.roadmap .box-1 .padding {
+    padding: 0 5vw;
+}
+.roadmap .box-1 h3 {
+    color: #FFF;
+    font-family: Insolent;
+    font-size: 3.5vw;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 3vw;
+}
+.roadmap .box-1 p{
+    padding-right: 5vw;
+}
+.roadmap .special-para{
+    margin-top: 2vw;
+}
+
+/* --------contract-----------
+------------------------------------- */
+.parent-contract {
+    padding: 5vw 10vw;
+    background: #1F2025;
+}
+.parent-contract .contract{
+    width: 100%;
+    border-radius: 12px;
+    background: #FF5917;
+    padding: 3vw 0;
+    position: relative;
+}
+.parent-contract .contract .contract-img {
+    position: absolute;
+    top: -10vw;
+    left: -20vw;
+    width: 48vw;
+}
+.parent-contract .contract h2{
+    margin-bottom: 1vw;
+}
+.parent-contract .contract .copy-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-contract .contract .copy-text input[type=text]{
+    background: #262525;
+    border: 1px solid #fff;
+    color: #CBCBCB;
+    width: 40vw;
+    height: 40px;
+    font-size: 1.8VW;
+    text-align: center;
+}
+.parent-contract .contract .copy-text input[type=submit]{
+    height: 40px;
+    width: 9vw;
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: Poppins;
+    cursor: pointer;
+}
+/* -----------crypto-market-------------
+------------- */
+.crypto-markets {
+    width: 100%;
+    padding: 4vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    background: #131418;
+}
+.crypto-markets img {
+    width: 16vw;
+}
+/* -----------------------footer---------------
+------------------ */
+footer{
+    padding: 5vw 10vw;
+    background: url("../images/footer-bg.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap:10vw;
+    justify-content: space-between;
+    align-items: start;
+}
+footer .logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .logo .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 4vw;
+}
+footer .logo .social-icons a i{
+    color: #A6A6A5;
+    font-size: 24px;
+}
+footer .email {
+    width: 100%;
+} 
+footer h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 4.6vw;
+    font-style: normal;
+    font-weight: 400;
+}
+footer .email a {
+    color: #FF5917;
+    display: block;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 2vw;
+}
+footer .links{
+    width: 100%;
+}
+footer .logo img {
+    width: 16vw;
+}
+footer .links ul{
+    margin-top: 2vw;
+}
+footer .links ul li{
+    
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 500;
+    list-style-type:none;
+    margin-bottom: 1.5vw;
+}
+footer .links ul li a{
+    color: #B5B5B5;
+}
+footer .links h3 span{
+    color: #FF5917;
+}
+/* ---------------copyright---------------
+---------------- */
+.copyright {
+    padding: 2vw;
+    background: #131418;
+}
+
+}
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-18 19:0:20
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
